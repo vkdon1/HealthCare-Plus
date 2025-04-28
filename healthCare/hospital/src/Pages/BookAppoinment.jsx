@@ -16,7 +16,7 @@ export default function BookAppointment() {
     async function fetchDoctorData() {
       try {
         const response = await fetch(
-          `https://5x5syj-3001.csb.app/Doctor/${id}`
+          `https://healthcare-plus-backend.onrender.com/Doctor/${id}`
         );
         if (!response.ok) {
           throw new Error(`Failed to fetch doctor data: ${response.status}`);
@@ -63,7 +63,7 @@ export default function BookAppointment() {
 
     try {
       setLoading(true);
-      const response = await fetch("https://5x5syj-3001.csb.app/appointments", {
+      const response = await fetch("https://healthcare-plus-backend.onrender.com/appointments", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

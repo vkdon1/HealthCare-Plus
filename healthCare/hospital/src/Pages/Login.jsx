@@ -11,7 +11,7 @@ function Login() {
   const handleLoginSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await fetch("https://5x5syj-3001.csb.app/auth/login", {
+      const response = await fetch("https://healthcare-plus-backend.onrender.com/auth/login", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

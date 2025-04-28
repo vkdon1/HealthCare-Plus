@@ -14,7 +14,7 @@ function SignUp() {
     // Handle form submission here
     try {
       const response = await fetch(
-        "https://5x5syj-3001.csb.app/auth/register",
+        "https://healthcare-plus-backend.onrender.com/auth/register",
         {
           method: "POST",
           headers: {

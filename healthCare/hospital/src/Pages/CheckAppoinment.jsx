@@ -53,7 +53,7 @@ const CheckAppointments = () => {
   // Function to send confirmation email
   const handleConfirmAppointment = async (appointment) => {
     try {
-      const response = await fetch("https://5x5syj-3001.csb.app/send-email", {
+      const response = await fetch("https://healthcare-plus-backend.onrender.com/send-email", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -80,7 +80,7 @@ const CheckAppointments = () => {
   // Function to send cancellation email
   const handleCancelAppointment = async (appointment) => {
     try {
-      const response = await fetch("https://5x5syj-3001.csb.app/send-email", {
+      const response = await fetch("https://healthcare-plus-backend.onrender.com/send-email", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

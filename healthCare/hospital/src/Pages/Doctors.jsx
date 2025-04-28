@@ -26,7 +26,7 @@ export default function DoctorDirectory() {
   useEffect(() => {
     const fetchDoctors = async () => {
       try {
-        const response = await fetch("https://5x5syj-3001.csb.app/AllDoctor");
+        const response = await fetch("https://healthcare-plus-backend.onrender.com/AllDoctor");
         if (!response.ok) {
           throw new Error("Failed to fetch data");
         }

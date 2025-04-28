@@ -10,7 +10,7 @@ const DoctorLogin = () => {
   const handleLogin = async (e) => {
     e.preventDefault();
     try {
-      const response = await fetch("https://5x5syj-3001.csb.app/DoctorLogin", {
+      const response = await fetch("https://healthcare-plus-backend.onrender.com/DoctorLogin", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
